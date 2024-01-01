@@ -7,3 +7,6 @@ let i = 0; while(i < 5) { console.log(i); i++; }
 
 // Question: Functions
 function greet() { return 'Hello, World!'; } console.log(greet());
+
+// Question: Arrow Functions
+const add = (a, b) => a + b; console.log(add(2,3));
