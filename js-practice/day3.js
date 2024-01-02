@@ -7,3 +7,6 @@ document.getElementById('myId').innerText = 'Updated';
 
 // Question: Event Listeners
 document.addEventListener('click', () => console.log('Clicked!'));
+
+// Question: Local Storage
+localStorage.setItem('user', 'Alice');
