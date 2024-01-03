@@ -10,3 +10,6 @@ let promise = new Promise((resolve) => resolve('Done')); promise.then(console.lo
 
 // Question: Async/Await
 async function fetchData() { return await fetch('https://api.example.com'); }
+
+// Question: ES6 Modules
+import { add } from './math.js'; console.log(add(2, 3));
