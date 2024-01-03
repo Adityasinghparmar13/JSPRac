@@ -7,3 +7,6 @@ fetch('https://api.example.com').then(res => res.json()).then(data => console.lo
 
 // Question: Promises
 let promise = new Promise((resolve) => resolve('Done')); promise.then(console.log);
+
+// Question: Async/Await
+async function fetchData() { return await fetch('https://api.example.com'); }
