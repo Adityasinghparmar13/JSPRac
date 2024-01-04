@@ -7,3 +7,6 @@ let a = 'Hello'; function say() { console.log(a); }
 
 // Question: Prototypal Inheritance
 function Person(name) { this.name = name; } Person.prototype.greet = function() { return 'Hi ' + this.name; };
+
+// Question: `this` Keyword
+const obj = { name: 'Alice', greet() { console.log(this.name); } }; obj.greet();
