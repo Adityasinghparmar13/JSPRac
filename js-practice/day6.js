@@ -7,3 +7,6 @@ function sum(...nums) { return nums.reduce((a,b) => a+b); }
 
 // Question: Regular Expressions
 let regex = /hello/i; console.log(regex.test('Hello World'));
+
+// Question: Functional Programming
+let add = x => y => x + y; console.log(add(2)(3));
