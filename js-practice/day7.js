@@ -7,3 +7,6 @@ const fs = require('fs'); fs.writeFileSync('test.txt', 'Hello');
 
 // Question: Express.js Routing
 const express = require('express'); const app = express(); app.get('/', (req, res) => res.send('Hello'));
+
+// Question: Performance Optimization
+console.time('test'); for(let i=0; i<1000000; i++){} console.timeEnd('test');
