@@ -13,3 +13,6 @@ let day = 3; switch(day) { case 3: console.log('Wednesday'); break; }
 
 // Question: Print 'Hello World' to the console
 console.log('Hello World');
+
+// Question: Declare a variable 'age' and assign it 25
+let age = 25;
