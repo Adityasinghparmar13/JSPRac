@@ -16,3 +16,6 @@ let arr = [1,2,3]; let doubled = arr.map(x => x*2); console.log(doubled);
 
 // Question: Convert string '123' to a number
 let str = '123'; console.log(Number(str));
+
+// Question: Create an array of 3 fruits
+let fruits = ['apple', 'banana', 'orange'];
