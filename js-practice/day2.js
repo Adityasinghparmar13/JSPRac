@@ -25,3 +25,6 @@ fruits.forEach(fruit => console.log(fruit));
 
 // Question: Create a function to square a number
 function square(n) { return n * n; }
+
+// Question: Use template literals to combine strings
+let name = 'Alice'; console.log(`Hello ${name}`);
