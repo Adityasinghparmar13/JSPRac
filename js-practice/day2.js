@@ -22,3 +22,6 @@ let fruits = ['apple', 'banana', 'orange'];
 
 // Question: Loop through an array with forEach
 fruits.forEach(fruit => console.log(fruit));
+
+// Question: Create a function to square a number
+function square(n) { return n * n; }
