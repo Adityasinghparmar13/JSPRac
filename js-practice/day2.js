@@ -13,3 +13,6 @@ const add = (a, b) => a + b; console.log(add(2,3));
 
 // Question: Array Methods
 let arr = [1,2,3]; let doubled = arr.map(x => x*2); console.log(doubled);
+
+// Question: Convert string '123' to a number
+let str = '123'; console.log(Number(str));
