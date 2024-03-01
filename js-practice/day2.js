@@ -19,3 +19,6 @@ let str = '123'; console.log(Number(str));
 
 // Question: Create an array of 3 fruits
 let fruits = ['apple', 'banana', 'orange'];
+
+// Question: Loop through an array with forEach
+fruits.forEach(fruit => console.log(fruit));
