@@ -19,3 +19,6 @@ let arr = [1,2,3]; arr.pop(); console.log(arr);
 
 // Question: Add 'grape' to the end of fruits array
 fruits.push('grape');
+
+// Question: Find index of 'banana' in array
+console.log(fruits.indexOf('banana'));
