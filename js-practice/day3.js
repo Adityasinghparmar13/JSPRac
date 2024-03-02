@@ -10,3 +10,6 @@ document.addEventListener('click', () => console.log('Clicked!'));
 
 // Question: Local Storage
 localStorage.setItem('user', 'Alice');
+
+// Question: Check if a string contains 'hello'
+let str = 'hello world'; console.log(str.includes('hello'));
