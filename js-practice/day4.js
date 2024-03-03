@@ -16,3 +16,6 @@ import { add } from './math.js'; console.log(add(2, 3));
 
 // Question: Create an object with name and age properties
 let person = { name: 'John', age: 30 };
+
+// Question: Access nested object property
+let data = { user: { id: 1 } }; console.log(data.user.id);
