@@ -13,3 +13,6 @@ async function fetchData() { return await fetch('https://api.example.com'); }
 
 // Question: ES6 Modules
 import { add } from './math.js'; console.log(add(2, 3));
+
+// Question: Create an object with name and age properties
+let person = { name: 'John', age: 30 };
