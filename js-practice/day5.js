@@ -19,3 +19,12 @@ console.log(fruits.slice(0,3));
 
 // Question: Convert object to JSON string
 console.log(JSON.stringify(person));
+
+// Question: Handle division by zero with try/catch
+
+    try {
+      let result = 10/0;
+      if(!isFinite(result)) throw 'Division error';
+    } catch(e) {
+      console.error(e);
+    }
