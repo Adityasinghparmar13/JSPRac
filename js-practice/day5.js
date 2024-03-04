@@ -10,3 +10,6 @@ function Person(name) { this.name = name; } Person.prototype.greet = function() 
 
 // Question: `this` Keyword
 const obj = { name: 'Alice', greet() { console.log(this.name); } }; obj.greet();
+
+// Question: Check if variable is an array
+console.log(Array.isArray(fruits));
