@@ -16,3 +16,6 @@ console.log(Array.isArray(fruits));
 
 // Question: Use slice to get first 3 array elements
 console.log(fruits.slice(0,3));
+
+// Question: Convert object to JSON string
+console.log(JSON.stringify(person));
