@@ -13,3 +13,6 @@ const obj = { name: 'Alice', greet() { console.log(this.name); } }; obj.greet();
 
 // Question: Check if variable is an array
 console.log(Array.isArray(fruits));
+
+// Question: Use slice to get first 3 array elements
+console.log(fruits.slice(0,3));
