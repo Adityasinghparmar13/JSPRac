@@ -28,3 +28,10 @@ console.log(JSON.stringify(person));
     } catch(e) {
       console.error(e);
     }
+
+// Question: Create a class with a constructor
+
+    class Car {
+      constructor(brand) { this.brand = brand; }
+    }
+    let myCar = new Car('Toyota');
