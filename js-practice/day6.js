@@ -13,3 +13,6 @@ let add = x => y => x + y; console.log(add(2)(3));
 
 // Question: Use Date object to get current year
 console.log(new Date().getFullYear());
+
+// Question: Generate random number between 1-100
+console.log(Math.floor(Math.random() * 100) + 1);
