@@ -19,3 +19,6 @@ console.log(Math.floor(Math.random() * 100) + 1);
 
 // Question: Use map to square array elements
 let nums = [1,2,3]; console.log(nums.map(n => n*n));
+
+// Question: Filter even numbers from array
+console.log(nums.filter(n => n%2 === 0));
