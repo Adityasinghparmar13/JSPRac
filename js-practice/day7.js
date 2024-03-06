@@ -16,3 +16,9 @@ let unique = new Set([1,1,2,3]); console.log([...unique]);
 
 // Question: Convert string to uppercase
 console.log('hello'.toUpperCase());
+
+// Question: Create a Map with key-value pairs
+
+    let map = new Map();
+    map.set('name', 'Alice');
+    console.log(map.get('name'));
