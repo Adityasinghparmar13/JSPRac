@@ -13,3 +13,6 @@ console.time('test'); for(let i=0; i<1000000; i++){} console.timeEnd('test');
 
 // Question: Create a Set from array
 let unique = new Set([1,1,2,3]); console.log([...unique]);
+
+// Question: Convert string to uppercase
+console.log('hello'.toUpperCase());
