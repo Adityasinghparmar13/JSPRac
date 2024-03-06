@@ -10,3 +10,6 @@ const express = require('express'); const app = express(); app.get('/', (req, re
 
 // Question: Performance Optimization
 console.time('test'); for(let i=0; i<1000000; i++){} console.timeEnd('test');
+
+// Question: Create a Set from array
+let unique = new Set([1,1,2,3]); console.log([...unique]);
