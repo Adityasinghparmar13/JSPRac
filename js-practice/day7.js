@@ -22,3 +22,6 @@ console.log('hello'.toUpperCase());
     let map = new Map();
     map.set('name', 'Alice');
     console.log(map.get('name'));
+
+// Question: Check if object has property
+console.log('name' in person);
