@@ -7,3 +7,9 @@ let {name} = person; console.log(name);
 
 // Question: Use ternary operator
 let isAdult = age >= 18 ? 'Yes' : 'No';
+
+// Question: Create a promise that resolves
+
+    let promise = new Promise((resolve) => {
+      setTimeout(() => resolve('Done'), 1000);
+    });
