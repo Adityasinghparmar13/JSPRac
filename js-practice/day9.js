@@ -14,3 +14,13 @@ document.querySelector('button').disabled = true;
       return Array.from({length: Math.ceil(arr.length/size)}, (_,i) => 
         arr.slice(i*size, i*size+size));
     }
+
+// Question: Debounce function implementation
+
+    function debounce(func, delay) {
+      let timeout;
+      return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+      };
+    }
