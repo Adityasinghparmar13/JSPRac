@@ -26,3 +26,15 @@ let cloned = JSON.parse(JSON.stringify(original));
       subscribe(fn) { this.subscribers.push(fn); }
       next(val) { this.subscribers.forEach(fn => fn(val)); }
     }
+
+// Question: Implement binary search
+
+    function binarySearch(arr, target) {
+      let left = 0, right = arr.length-1;
+      while(left <= right) {
+        let mid = Math.floor((left+right)/2);
+        if(arr[mid] === target) return mid;
+        arr[mid] < target ? left = mid+1 : right = mid-1;
+      }
+      return -1;
+    }
