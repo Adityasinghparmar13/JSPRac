@@ -18,3 +18,11 @@ let cloned = JSON.parse(JSON.stringify(original));
         return key in cache ? cache[key] : (cache[key] = fn(...args));
       };
     }
+
+// Question: Create observable with subscribers
+
+    class Observable {
+      constructor() { this.subscribers = []; }
+      subscribe(fn) { this.subscribers.push(fn); }
+      next(val) { this.subscribers.forEach(fn => fn(val)); }
+    }
