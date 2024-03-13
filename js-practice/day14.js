@@ -36,3 +36,9 @@
       const module = await WebAssembly.instantiate(buffer);
       console.log(module.exports.add(2,3));
     })();
+
+// Question: Optimize React rendering with memo
+
+    const MemoComponent = React.memo(({ prop }) => {
+      return <div>{prop}</div>;
+    });
