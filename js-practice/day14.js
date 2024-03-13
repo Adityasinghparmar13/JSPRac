@@ -18,3 +18,12 @@
     const gl = canvas.getContext('webgl');
     gl.clearColor(0,0,0,1);
     gl.clear(gl.COLOR_BUFFER_BIT);
+
+// Question: Implement JWT authentication
+
+    function generateToken(user) {
+      return jwt.sign({ id: user.id }, 'secret', { expiresIn: '1h' });
+    }
+    function verifyToken(token) {
+      return jwt.verify(token, 'secret');
+    }
