@@ -11,3 +11,10 @@
       });
     });
     document.querySelectorAll('img.lazy').forEach(img => observer.observe(img));
+
+// Question: Create WebGL renderer
+
+    const canvas = document.querySelector('#glCanvas');
+    const gl = canvas.getContext('webgl');
+    gl.clearColor(0,0,0,1);
+    gl.clear(gl.COLOR_BUFFER_BIT);
