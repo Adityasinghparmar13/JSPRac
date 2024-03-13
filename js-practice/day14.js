@@ -27,3 +27,12 @@
     function verifyToken(token) {
       return jwt.verify(token, 'secret');
     }
+
+// Question: Create WebAssembly module
+
+    (async () => {
+      const response = await fetch('module.wasm');
+      const buffer = await response.arrayBuffer();
+      const module = await WebAssembly.instantiate(buffer);
+      console.log(module.exports.add(2,3));
+    })();
