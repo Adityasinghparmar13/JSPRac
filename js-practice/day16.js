@@ -7,3 +7,9 @@
     RUN npm install
     COPY . .
     CMD ["node", "server.js"]
+
+// Question: Write Jest test suite
+
+    test('adds 1 + 2 to equal 3', () => {
+      expect(sum(1,2)).toBe(3);
+    });
