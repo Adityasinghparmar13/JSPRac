@@ -6,3 +6,11 @@
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
+
+// Question: Implement WebRTC connection
+
+    const pc = new RTCPeerConnection();
+    pc.onicecandidate = e => {
+      if(e.candidate) sendCandidate(e.candidate);
+    };
+    pc.createOffer().then(offer => pc.setLocalDescription(offer));
