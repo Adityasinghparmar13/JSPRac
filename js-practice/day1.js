@@ -34,3 +34,6 @@ console.log('Hello World');
 
 // Question: Calculate the sum of 7 and 12
 console.log(7 + 12);
+
+// Question: Convert string '123' to a number
+let str = '123'; console.log(Number(str));
