@@ -28,3 +28,6 @@ let age = 25;
 
 // Question: Check if a number is even using modulo
 let num = 10; console.log(num % 2 === 0);
+
+// Question: Print 'Hello World' to the console
+console.log('Hello World');
