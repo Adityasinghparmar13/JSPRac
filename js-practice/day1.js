@@ -22,3 +22,6 @@ console.log(7 + 12);
 
 // Question: Check if a number is even using modulo
 let num = 10; console.log(num % 2 === 0);
+
+// Question: Declare a variable 'age' and assign it 25
+let age = 25;
