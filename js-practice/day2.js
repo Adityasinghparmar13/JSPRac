@@ -28,3 +28,6 @@ function square(n) { return n * n; }
 
 // Question: Use template literals to combine strings
 let name = 'Alice'; console.log(`Hello ${name}`);
+
+// Question: Loop through an array with forEach
+fruits.forEach(fruit => console.log(fruit));
