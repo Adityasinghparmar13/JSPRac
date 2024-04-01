@@ -15,3 +15,9 @@ function isPrime(num) {
     return true;
 }
 console.log(isPrime(7)); // true
+
+// Question: 7. Reverse a string
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+console.log(reverseString('hello')); // 'olleh'
