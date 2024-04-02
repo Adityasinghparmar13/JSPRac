@@ -7,3 +7,6 @@ let str = 'hello world'; console.log(str.includes('hello'));
 
 // Question: Use template literals to combine strings
 let name = 'Alice'; console.log(`Hello ${name}`);
+
+// Question: Add 'grape' to the end of fruits array
+fruits.push('grape');
