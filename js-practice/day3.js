@@ -22,3 +22,6 @@ fruits.push('grape');
 
 // Question: Find index of 'banana' in array
 console.log(fruits.indexOf('banana'));
+
+// Question: Add 'grape' to the end of fruits array
+fruits.push('grape');
