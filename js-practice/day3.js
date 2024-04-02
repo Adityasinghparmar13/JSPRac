@@ -19,3 +19,12 @@ function isLeapYear(year) {
     return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 }
 console.log(isLeapYear(2020)); // true
+
+// Question: 11. Celsius to Fahrenheit conversion
+
+// Conversion formula implementation
+function celsiusToFahrenheit(c) {
+    // (C × 9/5) + 32
+    return (c * 9/5) + 32;
+}
+console.log(celsiusToFahrenheit(25)); // 77
