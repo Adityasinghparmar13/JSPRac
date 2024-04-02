@@ -34,3 +34,6 @@ console.log(fruits.indexOf('banana'));
 
 // Question: Check if a string contains 'hello'
 let str = 'hello world'; console.log(str.includes('hello'));
+
+// Question: Create an object with name and age properties
+let person = { name: 'John', age: 30 };
