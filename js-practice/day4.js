@@ -28,3 +28,6 @@ let str = 'hello'; console.log(str.split('').reverse().join(''));
 
 // Question: Reverse a string
 let str = 'hello'; console.log(str.split('').reverse().join(''));
+
+// Question: Check if variable is an array
+console.log(Array.isArray(fruits));
