@@ -31,3 +31,6 @@ let str = 'hello'; console.log(str.split('').reverse().join(''));
 
 // Question: Check if variable is an array
 console.log(Array.isArray(fruits));
+
+// Question: Merge two arrays using concat
+let arr1 = [1,2]; let arr2 = [3,4]; console.log(arr1.concat(arr2));
