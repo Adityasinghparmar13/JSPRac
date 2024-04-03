@@ -30,3 +30,14 @@ function fibonacci(n) {
     return seq.slice(0, n);
 }
 console.log(fibonacci(5)); // [0, 1, 1, 2, 3]
+
+// Question: 15. Generate multiplication table
+
+// Loop-based table generation
+function multiplicationTable(num) {
+    // Iterate from 1 to 10
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${num} × ${i} = ${num * i}`);
+    }
+}
+multiplicationTable(5); // Prints 5's table
