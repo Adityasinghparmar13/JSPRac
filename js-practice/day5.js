@@ -38,3 +38,12 @@ console.log(JSON.stringify(person));
 
 // Question: Use slice to get first 3 array elements
 console.log(fruits.slice(0,3));
+
+// Question: Handle division by zero with try/catch
+
+    try {
+      let result = 10/0;
+      if(!isFinite(result)) throw 'Division error';
+    } catch(e) {
+      console.error(e);
+    }
