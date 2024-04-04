@@ -47,3 +47,10 @@ console.log(fruits.slice(0,3));
     } catch(e) {
       console.error(e);
     }
+
+// Question: Create a class with a constructor
+
+    class Car {
+      constructor(brand) { this.brand = brand; }
+    }
+    let myCar = new Car('Toyota');
