@@ -7,3 +7,6 @@ console.log(Array.isArray(fruits));
 
 // Question: Convert object to JSON string
 console.log(JSON.stringify(person));
+
+// Question: Reverse a string
+let str = 'hello'; console.log(str.split('').reverse().join(''));
