@@ -54,3 +54,6 @@ console.log(fruits.slice(0,3));
       constructor(brand) { this.brand = brand; }
     }
     let myCar = new Car('Toyota');
+
+// Question: Convert object to JSON string
+console.log(JSON.stringify(person));
