@@ -28,3 +28,12 @@ function replaceChar(str, oldChar, newChar) {
     return str.split(oldChar).join(newChar);
 }
 console.log(replaceChar('hello', 'l', 'x')); // 'hexxo'
+
+// Question: 21. Calculate sphere volume
+
+// Calculate sphere volume using formula
+function sphereVolume(radius) {
+    // V = (4/3)πr³
+    return (4/3) * Math.PI * Math.pow(radius, 3);
+}
+console.log(sphereVolume(3).toFixed(2)); // 113.10
