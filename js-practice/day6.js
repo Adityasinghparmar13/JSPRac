@@ -8,3 +8,14 @@ function countVowels(str) {
     return matches ? matches.length : 0;
 }
 console.log(countVowels('JavaScript')); // 3
+
+// Question: 24. Convert string to title case
+
+// Title case transformation
+function toTitleCase(str) {
+    return str.toLowerCase().split(' ').map(word => 
+        // Capitalize first letter of each word
+        word.charAt(0).toUpperCase() + word.slice(1)
+    ).join(' ');
+}
+console.log(toTitleCase('hello world')); // 'Hello World'
