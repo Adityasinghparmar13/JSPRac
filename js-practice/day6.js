@@ -31,3 +31,6 @@ let nums = [1,2,3]; console.log(nums.map(n => n*n));
 
 // Question: Generate random number between 1-100
 console.log(Math.floor(Math.random() * 100) + 1);
+
+// Question: Use Date object to get current year
+console.log(new Date().getFullYear());
