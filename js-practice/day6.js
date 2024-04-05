@@ -34,3 +34,6 @@ console.log(Math.floor(Math.random() * 100) + 1);
 
 // Question: Use Date object to get current year
 console.log(new Date().getFullYear());
+
+// Question: Find maximum value in array
+console.log(Math.max(...nums));
