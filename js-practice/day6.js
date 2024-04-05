@@ -25,3 +25,6 @@ console.log(nums.filter(n => n%2 === 0));
 
 // Question: Find maximum value in array
 console.log(Math.max(...nums));
+
+// Question: Use map to square array elements
+let nums = [1,2,3]; console.log(nums.map(n => n*n));
