@@ -18,3 +18,16 @@ function removeDuplicates(arr) {
     return [...new Set(arr)];
 }
 console.log(removeDuplicates([1,2,2,3])); // [1,2,3]
+
+// Question: 28. Reverse array elements
+
+// Manual array reversal
+function reverseArray(arr) {
+    const reversed = [];
+    // Iterate from end to start
+    for (let i = arr.length - 1; i >= 0; i--) {
+        reversed.push(arr[i]);
+    }
+    return reversed;
+}
+console.log(reverseArray([1,2,3])); // [3,2,1]
