@@ -37,3 +37,6 @@ console.log('name' in person);
     let map = new Map();
     map.set('name', 'Alice');
     console.log(map.get('name'));
+
+// Question: Create a Set from array
+let unique = new Set([1,1,2,3]); console.log([...unique]);
