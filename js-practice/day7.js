@@ -40,3 +40,6 @@ console.log('name' in person);
 
 // Question: Create a Set from array
 let unique = new Set([1,1,2,3]); console.log([...unique]);
+
+// Question: Convert string to uppercase
+console.log('hello'.toUpperCase());
