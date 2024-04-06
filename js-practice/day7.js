@@ -25,3 +25,6 @@ console.log('hello'.toUpperCase());
 
 // Question: Check if object has property
 console.log('name' in person);
+
+// Question: Destructure array elements
+let [first, second] = [1,2,3]; console.log(first);
