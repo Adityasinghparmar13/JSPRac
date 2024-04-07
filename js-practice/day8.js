@@ -21,3 +21,12 @@ function mergeArrays(arr1, arr2) {
     return [...new Set([...arr1, ...arr2])];
 }
 console.log(mergeArrays([1,2], [2,3])); // [1,2,3]
+
+// Question: 32. Calculate array average
+
+// Using reduce for sum calculation
+function arrayAverage(arr) {
+    // Sum elements and divide by length
+    return arr.reduce((a, b) => a + b, 0) / arr.length;
+}
+console.log(arrayAverage([4, 2, 8, 6])); // 5
