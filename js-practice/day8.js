@@ -28,3 +28,6 @@ let isAdult = age >= 18 ? 'Yes' : 'No';
 
 // Question: Destructure object properties
 let {name} = person; console.log(name);
+
+// Question: Format number to 2 decimal places
+let price = 9.99; console.log(price.toFixed(2));
