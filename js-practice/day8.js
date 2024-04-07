@@ -25,3 +25,6 @@ let price = 9.99; console.log(price.toFixed(2));
 
 // Question: Use ternary operator
 let isAdult = age >= 18 ? 'Yes' : 'No';
+
+// Question: Destructure object properties
+let {name} = person; console.log(name);
