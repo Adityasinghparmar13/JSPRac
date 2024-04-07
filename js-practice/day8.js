@@ -10,3 +10,6 @@ console.log('name' in person);
 
 // Question: Convert string to uppercase
 console.log('hello'.toUpperCase());
+
+// Question: Destructure array elements
+let [first, second] = [1,2,3]; console.log(first);
