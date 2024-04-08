@@ -10,3 +10,6 @@ let price = 9.99; console.log(price.toFixed(2));
     let promise = new Promise((resolve) => {
       setTimeout(() => resolve('Done'), 1000);
     });
+
+// Question: Destructure object properties
+let {name} = person; console.log(name);
