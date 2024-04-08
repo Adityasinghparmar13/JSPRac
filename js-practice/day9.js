@@ -25,3 +25,12 @@ function stringToWordArray(str) {
     return str.split(/\s+/);
 }
 console.log(stringToWordArray('Hello world JS')); // ['Hello', 'world', 'JS']
+
+// Question: 33. Check if object is empty
+
+// Check object key count
+function isEmpty(obj) {
+    // Convert keys to array and check length
+    return Object.keys(obj).length === 0;
+}
+console.log(isEmpty({})); // true
