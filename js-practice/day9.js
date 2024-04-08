@@ -16,3 +16,12 @@ function arrayToString(arr, separator = ', ') {
     return arr.join(separator);
 }
 console.log(arrayToString(['a', 'b', 'c'], '-')); // 'a-b-c'
+
+// Question: 36. Convert string to array of words
+
+// Split on whitespace characters
+function stringToWordArray(str) {
+    // Use split with regex for multiple spaces
+    return str.split(/\s+/);
+}
+console.log(stringToWordArray('Hello world JS')); // ['Hello', 'world', 'JS']
