@@ -24,3 +24,6 @@ document.querySelector('button').disabled = true;
         timeout = setTimeout(() => func.apply(this, args), delay);
       };
     }
+
+// Question: Disable a button element
+document.querySelector('button').disabled = true;
