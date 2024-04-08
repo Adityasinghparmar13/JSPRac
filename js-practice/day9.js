@@ -27,3 +27,6 @@ document.querySelector('button').disabled = true;
 
 // Question: Disable a button element
 document.querySelector('button').disabled = true;
+
+// Question: Create a new div element
+document.createElement('div');
