@@ -41,3 +41,13 @@ let cloned = JSON.parse(JSON.stringify(original));
 
 // Question: Deep clone object using JSON
 let cloned = JSON.parse(JSON.stringify(original));
+
+// Question: Memoize function results
+
+    function memoize(fn) {
+      let cache = {};
+      return (...args) => {
+        let key = JSON.stringify(args);
+        return key in cache ? cache[key] : (cache[key] = fn(...args));
+      };
+    }
