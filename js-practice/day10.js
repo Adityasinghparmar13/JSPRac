@@ -59,3 +59,10 @@ let cloned = JSON.parse(JSON.stringify(original));
       subscribe(fn) { this.subscribers.push(fn); }
       next(val) { this.subscribers.forEach(fn => fn(val)); }
     }
+
+// Question: Flatten nested array recursively
+
+    function flatten(arr) {
+      return arr.reduce((acc, val) => 
+        Array.isArray(val) ? acc.concat(flatten(val)) : acc.concat(val), []);
+    }
