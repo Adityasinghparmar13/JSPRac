@@ -66,3 +66,13 @@ let cloned = JSON.parse(JSON.stringify(original));
       return arr.reduce((acc, val) => 
         Array.isArray(val) ? acc.concat(flatten(val)) : acc.concat(val), []);
     }
+
+// Question: Debounce function implementation
+
+    function debounce(func, delay) {
+      let timeout;
+      return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+      };
+    }
