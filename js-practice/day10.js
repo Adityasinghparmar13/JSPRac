@@ -8,3 +8,6 @@ document.createElement('div');
       return Array.from({length: Math.ceil(arr.length/size)}, (_,i) => 
         arr.slice(i*size, i*size+size));
     }
+
+// Question: Change text of element with id 'header'
+document.getElementById('header').textContent = 'New Title';
