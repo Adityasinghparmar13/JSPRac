@@ -28,3 +28,12 @@ function findIndex(arr, element) {
     return -1;
 }
 console.log(findIndex(['a', 'b', 'c'], 'b')); // 1
+
+// Question: 38. Filter array elements
+
+// Custom filter for even numbers
+function filterEvens(numbers) {
+    // Return new array with even numbers
+    return numbers.filter(num => num % 2 === 0);
+}
+console.log(filterEvens([1, 2, 3, 4])); // [2, 4]
