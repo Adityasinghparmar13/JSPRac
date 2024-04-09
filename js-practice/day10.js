@@ -38,3 +38,6 @@ let cloned = JSON.parse(JSON.stringify(original));
       }
       return -1;
     }
+
+// Question: Deep clone object using JSON
+let cloned = JSON.parse(JSON.stringify(original));
