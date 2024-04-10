@@ -25,3 +25,6 @@
         timeout = setTimeout(() => func.apply(this, args), delay);
       };
     }
+
+// Question: Deep clone object using JSON
+let cloned = JSON.parse(JSON.stringify(original));
