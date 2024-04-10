@@ -21,3 +21,14 @@ function countOccurrences(arr) {
     }, {});
 }
 console.log(countOccurrences(['a','b','a','c'])); // {a:2, b:1, c:1}
+
+// Question: 44. Capitalize each word
+
+// Split and capitalize first letters
+function capitalizeWords(str) {
+    return str.split(' ').map(word => 
+        // Capitalize first letter + rest lowercase
+        word[0].toUpperCase() + word.slice(1).toLowerCase()
+    ).join(' ');
+}
+console.log(capitalizeWords('hello world')); // 'Hello World'
