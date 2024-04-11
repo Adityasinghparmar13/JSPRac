@@ -21,3 +21,11 @@
         console.error('Fetch failed:', error);
       }
     }
+
+// Question: Create observable with subscribers
+
+    class Observable {
+      constructor() { this.subscribers = []; }
+      subscribe(fn) { this.subscribers.push(fn); }
+      next(val) { this.subscribers.forEach(fn => fn(val)); }
+    }
