@@ -96,3 +96,15 @@
         return isAuth ? <Component {...props} /> : <Login />;
       };
     }
+
+// Question: Create custom event emitter
+
+    class EventEmitter {
+      constructor() { this.events = {}; }
+      on(event, listener) {
+        (this.events[event] || (this.events[event] = [])).push(listener);
+      }
+      emit(event, ...args) {
+        (this.events[event] || []).forEach(listener => listener(...args));
+      }
+    }
