@@ -29,3 +29,8 @@
       subscribe(fn) { this.subscribers.push(fn); }
       next(val) { this.subscribers.forEach(fn => fn(val)); }
     }
+
+// Question: Parse query parameters from URL
+
+    let params = new URLSearchParams(window.location.search);
+    console.log(params.get('page'));
