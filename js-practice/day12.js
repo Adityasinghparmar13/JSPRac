@@ -108,3 +108,9 @@
         (this.events[event] || []).forEach(listener => listener(...args));
       }
     }
+
+// Question: Validate email with regex
+
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
