@@ -17,3 +17,10 @@
         (this.events[event] || []).forEach(listener => listener(...args));
       }
     }
+
+// Question: Implement authentication middleware
+
+    function authMiddleware(req, res, next) {
+      if(req.headers.authorization) next();
+      else res.status(401).send('Unauthorized');
+    }
