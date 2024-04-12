@@ -47,3 +47,13 @@
       console.log((e.loaded / e.total * 100).toFixed(0) + '%');
     xhr.open('POST', '/upload');
     xhr.send(formData);
+
+// Question: Convert callback to promise
+
+    function promisify(fn) {
+      return (...args) => new Promise((resolve, reject) => {
+        fn(...args, (err, result) => {
+          err ? reject(err) : resolve(result);
+        });
+      });
+    }
