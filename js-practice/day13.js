@@ -57,3 +57,18 @@
         });
       });
     }
+
+// Question: Implement React-like useState hook
+
+    let hooks = [];
+    let idx = 0;
+    function useState(initial) {
+      let state = hooks[idx] || initial;
+      let _idx = idx;
+      function setState(newVal) {
+        hooks[_idx] = newVal;
+        render();
+      }
+      idx++;
+      return [state, setState];
+    }
