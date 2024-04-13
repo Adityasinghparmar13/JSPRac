@@ -26,3 +26,13 @@ console.log(daysBetween(
     new Date('2023-01-01'), 
     new Date('2023-01-10')
 )); // 9
+
+// Question: 54. Format phone number
+
+// Basic phone number formatting
+function formatPhoneNumber(numbers) {
+    // Join and insert formatting
+    const str = numbers.join('');
+    return `(${str.slice(0, 3)}) ${str.slice(3, 6)}-${str.slice(6)}`;
+}
+console.log(formatPhoneNumber([1,2,3,4,5,6,7,8,9,0])); // (123) 456-7890
