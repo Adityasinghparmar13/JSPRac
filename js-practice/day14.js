@@ -61,3 +61,12 @@
     const ws = new WebSocket('wss://echo.websocket.org');
     ws.onopen = () => ws.send('Hello');
     ws.onmessage = e => console.log('Received:', e.data);
+
+// Question: Implement JWT authentication
+
+    function generateToken(user) {
+      return jwt.sign({ id: user.id }, 'secret', { expiresIn: '1h' });
+    }
+    function verifyToken(token) {
+      return jwt.verify(token, 'secret');
+    }
