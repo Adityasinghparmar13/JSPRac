@@ -55,3 +55,9 @@
       });
     });
     document.querySelectorAll('img.lazy').forEach(img => observer.observe(img));
+
+// Question: Create WebSocket client
+
+    const ws = new WebSocket('wss://echo.websocket.org');
+    ws.onopen = () => ws.send('Hello');
+    ws.onmessage = e => console.log('Received:', e.data);
