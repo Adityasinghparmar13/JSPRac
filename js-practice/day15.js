@@ -77,3 +77,16 @@
       console.log('New state:', store.getState());
       return result;
     };
+
+// Question: Build Webpack configuration
+
+    module.exports = {
+      entry: './src/index.js',
+      output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js'
+      },
+      module: {
+        rules: [{ test: /\.js$/, use: 'babel-loader' }]
+      }
+    };
