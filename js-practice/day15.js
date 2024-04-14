@@ -27,3 +27,9 @@
     const ws = new WebSocket('wss://echo.websocket.org');
     ws.onopen = () => ws.send('Hello');
     ws.onmessage = e => console.log('Received:', e.data);
+
+// Question: Create Web Worker
+
+    const worker = new Worker('worker.js');
+    worker.postMessage('Start');
+    worker.onmessage = e => console.log(e.data);
