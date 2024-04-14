@@ -68,3 +68,12 @@
       const module = await WebAssembly.instantiate(buffer);
       console.log(module.exports.add(2,3));
     })();
+
+// Question: Implement Redux middleware
+
+    const loggerMiddleware = store => next => action => {
+      console.log('Dispatching:', action);
+      let result = next(action);
+      console.log('New state:', store.getState());
+      return result;
+    };
