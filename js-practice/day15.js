@@ -42,3 +42,9 @@
         createUser: (_, { input }) => db.users.create(input)
       }
     };
+
+// Question: Optimize React rendering with memo
+
+    const MemoComponent = React.memo(({ prop }) => {
+      return <div>{prop}</div>;
+    });
