@@ -49,3 +49,14 @@
       }
     });
     const token = await oauth2.clientCredentials.getToken();
+
+// Question: Implement GraphQL resolver
+
+    const resolvers = {
+      Query: {
+        user: (_, { id }) => db.users.find(u => u.id === id)
+      },
+      Mutation: {
+        createUser: (_, { input }) => db.users.create(input)
+      }
+    };
