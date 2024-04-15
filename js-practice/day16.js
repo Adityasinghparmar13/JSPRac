@@ -11,3 +11,12 @@
       });
     });
     document.querySelectorAll('img.lazy').forEach(img => observer.observe(img));
+
+// Question: Implement JWT authentication
+
+    function generateToken(user) {
+      return jwt.sign({ id: user.id }, 'secret', { expiresIn: '1h' });
+    }
+    function verifyToken(token) {
+      return jwt.verify(token, 'secret');
+    }
