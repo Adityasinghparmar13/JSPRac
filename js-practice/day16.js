@@ -29,3 +29,10 @@
       const module = await WebAssembly.instantiate(buffer);
       console.log(module.exports.add(2,3));
     })();
+
+// Question: Create WebGL renderer
+
+    const canvas = document.querySelector('#glCanvas');
+    const gl = canvas.getContext('webgl');
+    gl.clearColor(0,0,0,1);
+    gl.clear(gl.COLOR_BUFFER_BIT);
