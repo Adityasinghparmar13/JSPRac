@@ -27,3 +27,13 @@
       if(e.candidate) sendCandidate(e.candidate);
     };
     pc.createOffer().then(offer => pc.setLocalDescription(offer));
+
+// Question: Create AWS Lambda handler
+
+    exports.handler = async (event) => {
+      const response = {
+        statusCode: 200,
+        body: JSON.stringify('Hello from Lambda!'),
+      };
+      return response;
+    };
