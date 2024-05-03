@@ -32,3 +32,12 @@ function fibonacci(n) {
     return seq.slice(0, n);
 }
 console.log(fibonacci(5)); // [0, 1, 1, 2, 3]
+
+// Question: 14. Check for vowel character
+
+// Case-insensitive vowel check
+function isVowel(char) {
+    // Convert to lowercase and check inclusion
+    return ['a','e','i','o','u'].includes(char.toLowerCase());
+}
+console.log(isVowel('E')); // true
