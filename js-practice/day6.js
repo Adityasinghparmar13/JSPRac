@@ -17,3 +17,14 @@ function replaceChar(str, oldChar, newChar) {
     return str.split(oldChar).join(newChar);
 }
 console.log(replaceChar('hello', 'l', 'x')); // 'hexxo'
+
+// Question: 24. Convert string to title case
+
+// Title case transformation
+function toTitleCase(str) {
+    return str.toLowerCase().split(' ').map(word => 
+        // Capitalize first letter of each word
+        word.charAt(0).toUpperCase() + word.slice(1)
+    ).join(' ');
+}
+console.log(toTitleCase('hello world')); // 'Hello World'
