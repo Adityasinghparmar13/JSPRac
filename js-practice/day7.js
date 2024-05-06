@@ -22,3 +22,12 @@ function reverseArray(arr) {
     return reversed;
 }
 console.log(reverseArray([1,2,3])); // [3,2,1]
+
+// Question: 26. Check array inclusion
+
+// Custom includes function
+function arrayIncludes(arr, element) {
+    // Use indexOf check
+    return arr.indexOf(element) !== -1;
+}
+console.log(arrayIncludes([1,2,3], 2)); // true
