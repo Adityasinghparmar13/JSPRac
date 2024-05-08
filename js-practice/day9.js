@@ -7,3 +7,12 @@ function isEmpty(obj) {
     return Object.keys(obj).length === 0;
 }
 console.log(isEmpty({})); // true
+
+// Question: 35. Convert array to string
+
+// Join elements with custom separator
+function arrayToString(arr, separator = ', ') {
+    // Use array join method
+    return arr.join(separator);
+}
+console.log(arrayToString(['a', 'b', 'c'], '-')); // 'a-b-c'
