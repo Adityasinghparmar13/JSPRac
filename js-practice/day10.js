@@ -16,3 +16,12 @@ function compactArray(arr) {
     return arr.filter(Boolean);
 }
 console.log(compactArray([0, 1, false, '', 3])); // [1, 3]
+
+// Question: 38. Filter array elements
+
+// Custom filter for even numbers
+function filterEvens(numbers) {
+    // Return new array with even numbers
+    return numbers.filter(num => num % 2 === 0);
+}
+console.log(filterEvens([1, 2, 3, 4])); // [2, 4]
