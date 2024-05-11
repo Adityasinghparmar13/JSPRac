@@ -25,3 +25,14 @@ function calculateBMI(weight, height) {
     return weight / (height ** 2);
 }
 console.log(calculateBMI(70, 1.75).toFixed(1)); // 22.9
+
+// Question: 48. Truncate string with ellipsis
+
+// Limit string length with truncation
+function truncateString(str, maxLength) {
+    // Add ellipsis if truncated
+    return str.length > maxLength 
+        ? str.slice(0, maxLength) + '...' 
+        : str;
+}
+console.log(truncateString('Long text here', 8)); // 'Long tex...'
