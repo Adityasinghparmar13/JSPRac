@@ -62,3 +62,29 @@ class WorkerManager {
         this.workers[availableWorker].onmessage = e => resolve(e.data);
     }
 }
+
+// Question: 31. Finite state machine implementation
+```javascript
+class StateMachine {
+    constructor(initial) {
+        this.state = initial;
+        this.transitions = {};
+    }
+    
+    addTransition(from, to, condition) {
+        // Store transition rules {fromState: {condition: toState}}
+        this.transitions[from] = this.transitions[from] || {};
+        this.transitions[from][condition] = to;
+    }
+
+    dispatch(condition) {
+        // Validate and execute state transition
+        const next = this.transitions[this.state]?.[condition];
+        if (next) this.state = next;
+        return this.state;
+    }
+}
+
+// Usage:
+const fsm = new StateMachine('idle');
+fsm.addTransition('idle', 'fetching', 'FETCH');
