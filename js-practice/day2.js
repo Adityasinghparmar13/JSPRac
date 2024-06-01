@@ -19,3 +19,9 @@ function celsiusToFahrenheit(c) {
     return (c * 9/5) + 32;
 }
 console.log(celsiusToFahrenheit(25)); // 77
+
+// Question: 7. Reverse a string
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+console.log(reverseString('hello')); // 'olleh'
