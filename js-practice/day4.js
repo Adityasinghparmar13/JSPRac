@@ -12,3 +12,16 @@ function fibonacci(n) {
     return seq.slice(0, n);
 }
 console.log(fibonacci(5)); // [0, 1, 1, 2, 3]
+
+// Question: 20. Count string occurrences
+
+// Count specific character in string
+function countOccurrences(str, char) {
+    let count = 0;
+    // Iterate through characters
+    for (let c of str) {
+        if (c === char) count++;
+    }
+    return count;
+}
+console.log(countOccurrences('programming', 'm')); // 2
