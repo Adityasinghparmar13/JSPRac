@@ -37,3 +37,12 @@ function toTitleCase(str) {
     ).join(' ');
 }
 console.log(toTitleCase('hello world')); // 'Hello World'
+
+// Question: 26. Check array inclusion
+
+// Custom includes function
+function arrayIncludes(arr, element) {
+    // Use indexOf check
+    return arr.indexOf(element) !== -1;
+}
+console.log(arrayIncludes([1,2,3], 2)); // true
