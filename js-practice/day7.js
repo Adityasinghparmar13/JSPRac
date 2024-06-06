@@ -16,3 +16,12 @@ function arrayAverage(arr) {
     return arr.reduce((a, b) => a + b, 0) / arr.length;
 }
 console.log(arrayAverage([4, 2, 8, 6])); // 5
+
+// Question: 33. Check if object is empty
+
+// Check object key count
+function isEmpty(obj) {
+    // Convert keys to array and check length
+    return Object.keys(obj).length === 0;
+}
+console.log(isEmpty({})); // true
