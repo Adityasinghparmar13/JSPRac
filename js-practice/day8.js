@@ -31,3 +31,12 @@ function filterEvens(numbers) {
     return numbers.filter(num => num % 2 === 0);
 }
 console.log(filterEvens([1, 2, 3, 4])); // [2, 4]
+
+// Question: 40. Remove falsy values from array
+
+// Filter out falsy values
+function compactArray(arr) {
+    // Use Boolean constructor as filter
+    return arr.filter(Boolean);
+}
+console.log(compactArray([0, 1, false, '', 3])); // [1, 3]
