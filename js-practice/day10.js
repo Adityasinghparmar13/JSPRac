@@ -46,3 +46,14 @@ function randomInRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 console.log(randomInRange(5, 10)); // Random integer 5-10
+
+// Question: 50. Find longest word
+
+// Split and reduce to find maximum
+function longestWord(str) {
+    return str.split(/\s+/).reduce((longest, word) => 
+        // Compare word lengths
+        word.length > longest.length ? word : longest
+    , '');
+}
+console.log(longestWord('The quick brown fox')); // 'quick'
