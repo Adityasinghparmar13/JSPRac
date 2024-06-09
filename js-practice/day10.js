@@ -18,3 +18,13 @@ function truncateString(str, maxLength) {
         : str;
 }
 console.log(truncateString('Long text here', 8)); // 'Long tex...'
+
+// Question: 49. Check anagrams
+
+// Compare sorted character arrays
+function areAnagrams(str1, str2) {
+    // Normalize and sort characters
+    const normalize = s => s.toLowerCase().split('').sort().join('');
+    return normalize(str1) === normalize(str2);
+}
+console.log(areAnagrams('listen', 'silent')); // true
