@@ -28,3 +28,12 @@ function areAnagrams(str1, str2) {
     return normalize(str1) === normalize(str2);
 }
 console.log(areAnagrams('listen', 'silent')); // true
+
+// Question: 47. Check integer
+
+// Verify number is integer
+function isInteger(num) {
+    // Compare with rounded value
+    return num === Math.floor(num);
+}
+console.log(isInteger(5.0)); // true
