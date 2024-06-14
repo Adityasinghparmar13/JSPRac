@@ -87,3 +87,30 @@ function deepEqual(a, b) {
 
 // Test case:
 console.log(deepEqual({ a: [1,2] }, { a: [1,2] })); // true
+
+// Question: 12. LRU Cache implementation
+```javascript
+class LRUCache {
+    constructor(capacity) {
+        this.cache = new Map();
+        this.capacity = capacity;
+    }
+
+    get(key) {
+        if (!this.cache.has(key)) return -1;
+        // Refresh key as most recently used
+        const value = this.cache.get(key);
+        this.cache.delete(key);
+        this.cache.set(key, value);
+        return value;
+    }
+
+    put(key, value) {
+        if (this.cache.has(key)) this.cache.delete(key);
+        this.cache.set(key, value);
+        // Evict least recently used if over capacity
+        if (this.cache.size > this.capacity) {
+            this.cache.delete(this.cache.keys().next().value);
+        }
+    }
+}
