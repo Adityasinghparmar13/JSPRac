@@ -57,3 +57,23 @@ class RateLimiter {
         return true;
     }
 }
+
+// Question: 16. Pub-Sub pattern implementation
+```javascript
+class PubSub {
+    constructor() {
+        this.subscribers = {};
+    }
+
+    subscribe(topic, callback) {
+        (this.subscribers[topic] || (this.subscribers[topic] = [])).push(callback);
+    }
+
+    publish(topic, data) {
+        (this.subscribers[topic] || []).forEach(fn => fn(data));
+    }
+
+    unsubscribe(topic, callback) {
+        this.subscribers[topic] = (this.subscribers[topic] || []).filter(fn => fn !== callback);
+    }
+}
