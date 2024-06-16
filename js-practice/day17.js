@@ -79,3 +79,26 @@ function createObservable(target) {
 
 // Usage:
 const observable = createObservable({ count: 0 });
+
+// Question: 21. Singleton pattern implementation
+```javascript
+class Singleton {
+    static instance;
+    
+    constructor() {
+        if (Singleton.instance) return Singleton.instance;
+        // Initialize singleton instance
+        this.data = {};
+        Singleton.instance = this;
+    }
+    
+    static getInstance() {
+        if (!Singleton.instance) new Singleton();
+        return Singleton.instance;
+    }
+}
+
+// Usage:
+const instance1 = Singleton.getInstance();
+const instance2 = Singleton.getInstance();
+console.log(instance1 === instance2); // true
