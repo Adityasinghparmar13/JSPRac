@@ -60,3 +60,22 @@ class Scheduler {
         this.isProcessing = false;
     }
 }
+
+// Question: 23. Observer with Proxy
+```javascript
+function createObservable(target) {
+    const observers = new Set();
+    
+    return new Proxy(target, {
+        set(obj, prop, value) {
+            // Notify observers on change
+            const prev = obj[prop];
+            obj[prop] = value;
+            observers.forEach(fn => fn(prop, prev, value));
+            return true;
+        }
+    });
+}
+
+// Usage:
+const observable = createObservable({ count: 0 });
