@@ -47,3 +47,29 @@ class Container {
 // Usage:
 const container = new Container();
 container.register('api', c => new ApiService());
+
+// Question: 25. Trie data structure implementation
+```javascript
+class TrieNode {
+    constructor() {
+        this.children = new Map();
+        this.isEnd = false;
+    }
+}
+
+class Trie {
+    constructor() {
+        this.root = new TrieNode();
+    }
+
+    insert(word) {
+        let node = this.root;
+        for (const char of word) {
+            if (!node.children.has(char)) {
+                node.children.set(char, new TrieNode());
+            }
+            node = node.children.get(char);
+        }
+        node.isEnd = true;
+    }
+}
