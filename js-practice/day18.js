@@ -23,3 +23,27 @@ class CircularBuffer {
         return item;
     }
 }
+
+// Question: 24. Dependency injection container
+```javascript
+class Container {
+    constructor() {
+        this.services = new Map();
+    }
+    
+    register(name, factory) {
+        this.services.set(name, { factory, instance: null });
+    }
+    
+    get(name) {
+        const service = this.services.get(name);
+        if (!service.instance) {
+            service.instance = service.factory(this);
+        }
+        return service.instance;
+    }
+}
+
+// Usage:
+const container = new Container();
+container.register('api', c => new ApiService());
