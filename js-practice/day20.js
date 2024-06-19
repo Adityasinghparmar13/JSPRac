@@ -48,3 +48,24 @@ function abortableTimeout(delay) {
 // Usage:
 const { timeout, abort } = abortableTimeout(5000);
 timeout.catch(console.error);
+
+// Question: 34. Immutable list implementation
+```javascript
+class ImmutableList {
+    constructor(items) {
+        this._data = Object.freeze([...items]);
+    }
+
+    push(item) {
+        // Return new instance with added item
+        return new ImmutableList([...this._data, item]);
+    }
+
+    pop() {
+        return new ImmutableList(this._data.slice(0, -1));
+    }
+
+    get items() {
+        return [...this._data];
+    }
+}
