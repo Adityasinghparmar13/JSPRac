@@ -69,3 +69,26 @@ class ImmutableList {
         return [...this._data];
     }
 }
+
+// Question: 33. Async middleware chain with context
+```javascript
+async function middlewareChain(context, middlewares) {
+    let index = 0;
+    const next = async () => {
+        if (index < middlewares.length) {
+            return middlewares[index++](context, next);
+        }
+    };
+    return next();
+}
+
+// Usage:
+middlewareChain({}, [
+    async (ctx, next) => {
+        ctx.user = await fetchUser();
+        await next();
+    },
+    async (ctx) => {
+        console.log(ctx.user);
+    }
+]);
