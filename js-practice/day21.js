@@ -75,3 +75,14 @@ async function batchPromises(items, processFn, batchSize = 10) {
 
 // Usage:
 batchPromises(urls, fetchUrl, 5);
+
+// Question: 43. Template string parser
+```javascript
+function parseTemplate(str, data) {
+    return str.replace(/\${(.*?)}/g, (match, key) => {
+        return data[key.trim()] || '';
+    });
+}
+
+// Usage:
+parseTemplate('Hello ${name}!', { name: 'Alice' }); // 'Hello Alice!'
