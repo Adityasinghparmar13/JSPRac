@@ -106,3 +106,31 @@ class ImageProxy {
 // Usage:
 const proxy = new ImageProxy('large-image.jpg');
 document.body.appendChild(proxy.load());
+
+// Question: 49. Command pattern with undo
+```javascript
+class CommandManager {
+    constructor() {
+        this.history = [];
+        this.position = -1;
+    }
+
+    execute(command) {
+        command.execute();
+        this.history = this.history.slice(0, this.position + 1);
+        this.history.push(command);
+        this.position++;
+    }
+
+    undo() {
+        if (this.position >= 0) {
+            this.history[this.position--].undo();
+        }
+    }
+
+    redo() {
+        if (this.position < this.history.length - 1) {
+            this.history[++this.position].execute();
+        }
+    }
+}
