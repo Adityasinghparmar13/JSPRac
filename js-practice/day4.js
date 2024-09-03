@@ -7,3 +7,12 @@ function simpleInterest(p, r, t) {
     return (p * r * t) / 100;
 }
 console.log(simpleInterest(1000, 5, 2)); // 100
+
+// Question: 14. Check for vowel character
+
+// Case-insensitive vowel check
+function isVowel(char) {
+    // Convert to lowercase and check inclusion
+    return ['a','e','i','o','u'].includes(char.toLowerCase());
+}
+console.log(isVowel('E')); // true
