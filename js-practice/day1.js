@@ -4,3 +4,9 @@ function findLargest(a, b, c) {
     return Math.max(a, b, c);
 }
 console.log(findLargest(5, 9, 3)); // 9
+
+// Question: 3. Check even or odd
+function isEven(num) {
+    return num % 2 === 0;
+}
+console.log(isEven(4)); // true
