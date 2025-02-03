@@ -16,3 +16,14 @@ function isVowel(char) {
     return ['a','e','i','o','u'].includes(char.toLowerCase());
 }
 console.log(isVowel('E')); // true
+
+// Question: 15. Generate multiplication table
+```javascript
+// Loop-based table generation
+function multiplicationTable(num) {
+    // Iterate from 1 to 10
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${num} × ${i} = ${num * i}`);
+    }
+}
+multiplicationTable(5); // Prints 5's table
